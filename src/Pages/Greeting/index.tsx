@@ -1,17 +1,17 @@
+import { useState } from 'react';
 import { IoIosArrowForward } from "react-icons/io";
 
 import './Greeting.css';
 
 function Greeting() {
-
-  
+  const [ greetingClass, setGreetingClass ] = useState('greeting');
 
   const handleOpenInvitation = () => {
-
+    setGreetingClass('greeting-close');
   }
 
   return (
-    <div className="greeting">
+    <div className={greetingClass}>
       <div className="greeting-container">
         <div className="text-inner">
           <p>Dear [Guess Name],</p>

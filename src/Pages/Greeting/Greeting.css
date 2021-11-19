@@ -1,12 +1,22 @@
 
 @keyframes slideTopToBottom {
   0% {
-    height: 0;
+    transform: translateY(-100vh);
   }
   100% {
-    height: 100vh;
+    transform: translateY(0);
   }
 }
+
+@keyframes slideBottomToTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
 
 @keyframes showFromHide {
   0% {
@@ -29,6 +39,10 @@
 }
 
 .greeting {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
   background-image: linear-gradient(180deg,rgba(0,4,10,0.36) 68%,#000c0f 100%),url('../../imgs/bg.jpeg');
   background-size: cover;
   background-position: bottom center;
@@ -39,6 +53,23 @@
   justify-content: center;
   align-items: center;
   animation: 0.5s ease-out 0s 1 slideTopToBottom, 0.5s cubic-bezier(0.280, 0.440, 1.000, -0.225) 0s 1 showFromHide;
+}
+
+.greeting-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background-image: linear-gradient(180deg,rgba(0,4,10,0.36) 68%,#000c0f 100%),url('../../imgs/bg.jpeg');
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 1.5s ease-out 0s 1 slideBottomToTop forwards;
 }
 
 .text-inner {
