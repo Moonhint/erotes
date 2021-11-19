@@ -3,7 +3,7 @@ import './Content.css';
 
 function Content() {
     const [contentClassName, setContentClassName] = useState('no-content');
-    
+
     useEffect(()=>{
         setTimeout(()=>{
             setContentClassName('content');
@@ -12,7 +12,42 @@ function Content() {
 
     return (
         <div className={contentClassName}>
-            content
+            <div>
+                Hero Banner
+            </div>
+            <div>
+                Prewed Case 1
+            </div>
+            <div>
+                Prewed Case 2
+            </div>
+            <div>
+                Prewed Case 3
+            </div>
+            <div>
+                Antoni Info
+            </div>
+            <div>
+                Sinthia Info
+            </div>
+            <div>
+                Pemberkatan Info
+            </div>
+            <div>
+                Resepsi Info
+            </div>
+            <div>
+                Countdown timer
+            </div>
+            <div>
+                RSVP
+            </div>
+            <div>
+                Guestbook
+            </div>
+            <div>
+                Footer
+            </div>
         </div>
     );
 }
