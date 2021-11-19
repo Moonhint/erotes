@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import './Content.css';
 
 function Content() {
-    const [contentClassName, setContentClassName] = useState('no-content')
-
+    const [contentClassName, setContentClassName] = useState('no-content');
+    
     useEffect(()=>{
         setTimeout(()=>{
             setContentClassName('content');

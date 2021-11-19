@@ -3,11 +3,16 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import './Greeting.css';
 
+const canon = require("../../audios/canon.mp3");
+
 function Greeting() {
   const [ greetingClass, setGreetingClass ] = useState('greeting');
 
   const handleOpenInvitation = () => {
     setGreetingClass('greeting-close');
+    let song = new Audio(canon.default);
+    console.log(song)
+    song.play();
   }
 
   return (
