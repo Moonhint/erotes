@@ -9,10 +9,10 @@ function Greeting() {
   const [ greetingClass, setGreetingClass ] = useState('greeting');
 
   const handleOpenInvitation = () => {
-    setGreetingClass('greeting-close');
     let song = new Audio(canon.default);
-    console.log(song)
+    song.currentTime = 3;
     song.play();
+    setGreetingClass('greeting-close');
   }
 
   return (
