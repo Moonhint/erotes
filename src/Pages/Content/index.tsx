@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import HeroBanner from '../../Components/HeroBanner';
 import './Content.css';
 
 function Content() {
@@ -12,9 +13,7 @@ function Content() {
 
     return (
         <div className={contentClassName}>
-            <div>
-                Hero Banner
-            </div>
+            <HeroBanner/>
             <div>
                 Prewed Case 1
             </div>
