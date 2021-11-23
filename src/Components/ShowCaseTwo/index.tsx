@@ -4,11 +4,12 @@ interface PropsType {
     title: string;
     desc: string;
     img: string;
+    rightRadius: boolean;
 }
-function ShowCaseTwo(props:PropsType) {
+function ShowCaseTwo(props:PropsType) {      
     return (
         <div className="show-case-two">
-            <div className="content-two-container">
+            <div className={props.rightRadius ? "content-two-container right" : "content-two-container left"}>
                 <div className="title">
                     <p>{props.title}</p>
                 </div>
