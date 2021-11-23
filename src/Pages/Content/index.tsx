@@ -3,7 +3,8 @@ import HeroBanner from '../../Components/HeroBanner';
 import ShowCaseOne from '../../Components/ShowCaseOne';
 import ShowCaseTwo from '../../Components/ShowCaseTwo';
 
-import imgPrewedOne from '../../imgs/prewed-one.jpeg';
+import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
+import imgPrewedThree from '../../imgs/prewed-three.jpeg';
 
 import './Content.css';
 
@@ -20,13 +21,13 @@ function Content() {
         {
             title: 'We Found Love',
             desc: '“You don’t love someone for their looks, or their clothes or their fancy car, but because they sing a song only you can hear.”',
-            img: imgPrewedOne,
+            img: imgPrewedTwo,
             rightRadius: false,
         },
         {
             title: 'One Love',
             desc: '“Happy marriages begin when we marry the ones we love, and they blossom when we love the ones we marry.”',
-            img: imgPrewedOne,
+            img: imgPrewedThree,
             rightRadius: true,
         }
     ]
