@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react';
 import HeroBanner from '../../Components/HeroBanner';
+import ShowCaseOne from '../../Components/ShowCaseOne';
+import ShowCaseTwo from '../../Components/ShowCaseTwo';
+
+import imgPrewedOne from '../../imgs/prewed-one.jpeg';
+
 import './Content.css';
 
 function Content() {
@@ -11,18 +16,22 @@ function Content() {
         }, 2000);
     },[]);
 
+    const showCasePrewed = [
+        {
+            title: 'We Found Love',
+            desc: '“You don’t love someone for their looks, or their clothes or their fancy car, but because they sing a song only you can hear.”'
+        },
+        {
+            title: 'One Love',
+            desc: '“Happy marriages begin when we marry the ones we love, and they blossom when we love the ones we marry.”'
+        }
+    ]
     return (
         <div className={contentClassName}>
             <HeroBanner/>
-            <div>
-                Prewed Case 1
-            </div>
-            <div>
-                Prewed Case 2
-            </div>
-            <div>
-                Prewed Case 3
-            </div>
+            <ShowCaseOne/>
+            <ShowCaseTwo title={showCasePrewed[0].title} desc={showCasePrewed[0].desc} img={imgPrewedOne} />
+            <ShowCaseTwo title={showCasePrewed[1].title} desc={showCasePrewed[1].desc} img={imgPrewedOne}/>
             <div>
                 Antoni Info
             </div>
