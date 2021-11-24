@@ -5,6 +5,7 @@ import ShowCaseTwo from '../../Components/ShowCaseTwo';
 import AntoniInfo from '../../Components/AntoniInfo';
 import SinthiaInfo from '../../Components/SinthiaInfo';
 import InfoPemberkatan from '../../Components/InfoPemberkatan';
+import InfoResepsi from '../../Components/InfoResepsi';
 
 import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
 import imgPrewedThree from '../../imgs/prewed-three.jpeg';
@@ -54,9 +55,7 @@ function Content() {
             <AntoniInfo/>
             <SinthiaInfo/>
             <InfoPemberkatan/>
-            <div>
-                Resepsi Info
-            </div>
+            <InfoResepsi/>
             <div>
                 Countdown timer
             </div>
