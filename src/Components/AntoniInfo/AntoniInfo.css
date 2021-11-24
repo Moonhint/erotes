@@ -1,0 +1,45 @@
+.antoni-info {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 85%;
+}
+.antoni-info .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: Open Sans,Arial,sans-serif;
+    color: #666;
+    padding-top: 8px;
+    margin-right: 8px;
+}
+.left-side .sosmed-container {
+    background-color: #9b949b;
+    color: #FFF;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-side .info-container {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.left-side h4 {
+    margin: 0;
+    font-family: 'DM Serif Display';
+    color: #9b949b;
+    font-size: 24px;
+}
+.left-side p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 13px;
+}
+.right-side img {
+    object-fit: contain;
+}

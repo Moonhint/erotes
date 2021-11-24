@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import HeroBanner from '../../Components/HeroBanner';
 import ShowCaseOne from '../../Components/ShowCaseOne';
 import ShowCaseTwo from '../../Components/ShowCaseTwo';
+import AntoniInfo from '../../Components/AntoniInfo';
+import SinthiaInfo from '../../Components/SinthiaInfo';
 
 import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
 import imgPrewedThree from '../../imgs/prewed-three.jpeg';
@@ -47,12 +49,9 @@ function Content() {
                 img={showCasePrewed[1].img}
                 rightRadius={showCasePrewed[1].rightRadius} 
             />
-            <div>
-                Antoni Info
-            </div>
-            <div>
-                Sinthia Info
-            </div>
+            <div className="divider-content"/>
+            <AntoniInfo/>
+            <SinthiaInfo/>
             <div>
                 Pemberkatan Info
             </div>
