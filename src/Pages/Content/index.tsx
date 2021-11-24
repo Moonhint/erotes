@@ -4,6 +4,7 @@ import ShowCaseOne from '../../Components/ShowCaseOne';
 import ShowCaseTwo from '../../Components/ShowCaseTwo';
 import AntoniInfo from '../../Components/AntoniInfo';
 import SinthiaInfo from '../../Components/SinthiaInfo';
+import InfoPemberkatan from '../../Components/InfoPemberkatan';
 
 import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
 import imgPrewedThree from '../../imgs/prewed-three.jpeg';
@@ -52,9 +53,7 @@ function Content() {
             <div className="divider-content"/>
             <AntoniInfo/>
             <SinthiaInfo/>
-            <div>
-                Pemberkatan Info
-            </div>
+            <InfoPemberkatan/>
             <div>
                 Resepsi Info
             </div>
