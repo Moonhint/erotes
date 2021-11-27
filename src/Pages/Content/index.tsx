@@ -6,6 +6,7 @@ import AntoniInfo from '../../Components/AntoniInfo';
 import SinthiaInfo from '../../Components/SinthiaInfo';
 import InfoPemberkatan from '../../Components/InfoPemberkatan';
 import InfoResepsi from '../../Components/InfoResepsi';
+import CountdownTimer from '../../Components/CountdownTimer';
 
 import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
 import imgPrewedThree from '../../imgs/prewed-three.jpeg';
@@ -56,9 +57,7 @@ function Content() {
             <SinthiaInfo/>
             <InfoPemberkatan/>
             <InfoResepsi/>
-            <div>
-                Countdown timer
-            </div>
+            <CountdownTimer/>
             <div>
                 RSVP
             </div>

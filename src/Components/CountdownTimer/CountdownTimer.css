@@ -1,0 +1,56 @@
+.countdown-timer {
+    background-position: bottom center;
+    background-image: linear-gradient(180deg,#9b949b 18%,rgba(0,0,0,0) 73%),url('../../imgs/countdown.jpeg');
+    border-radius: 0 0 25px 25px;
+    overflow: hidden;
+    box-shadow: 0px 18px 18px -10px rgb(0 0 0 / 28%);
+    top: -72px;
+    bottom: auto;
+    padding-bottom: 350px!important;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.countdown-timer h4 {
+    color: #FFF;
+    font-size: 15px;
+    font-family: 'DM Serif Display';
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 2px;
+    margin-bottom: 14px;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-container .divider {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 24px;
+}
+
+.timer-container .timer {
+    margin: 0px 8px;
+}
+
+.timer p {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    margin: 0;
+}
+.timer .desc {
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    margin-left: 3px;
+    margin-top: 4px;
+}
