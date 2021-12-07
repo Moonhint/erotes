@@ -1,20 +1,20 @@
 .rsvp-form {
     text-align: center;
     position: relative;
-    top: -32px;
+    top: -18px;
 }
 
 .rsvp-form h4 {
     font-family: 'Philosopher';
-    font-size: 38px;
+    font-size: 48px;
     margin: 0;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: #333;
 }
 
 .rsvp-form p {
     font-family: 'Open Sans';
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
     line-height: 1.7em;
     font-weight: 500;
@@ -23,5 +23,75 @@
 }
 
 .rsvp-form .name {
-    margin: 18px auto;
+    font-family: 'Pacifico';
+    margin: 0 auto;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.rsvp-form button {
+    color: #FFFFFF!important;
+    border-width: 0px!important;
+    font-size: 17px;
+    background-color: #9b949b!important;
+    padding: 10px 18px;
+    border-radius: 3px;
+    margin: 6px 0;
+}
+
+.rsvp-form form {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 18px;
+}
+
+.rsvp-form .form-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.selectdiv {
+    position: relative;
+    width: 100%;
+}
+  
+.selectdiv:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border: 6px solid;
+    border-color: #666 transparent transparent;
+    margin-top: 3px;
+    pointer-events: none;
+}
+  
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+    display: none;
+}
+  
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+
+    color: #999;
+    background-color: #eee;
+    padding: 16px 20px 16px 16px;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    outline:none;
 }
