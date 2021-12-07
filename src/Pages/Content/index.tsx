@@ -7,6 +7,7 @@ import SinthiaInfo from '../../Components/SinthiaInfo';
 import InfoPemberkatan from '../../Components/InfoPemberkatan';
 import InfoResepsi from '../../Components/InfoResepsi';
 import CountdownTimer from '../../Components/CountdownTimer';
+import RSVPForm from '../../Components/RSVPForm';
 
 import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
 import imgPrewedThree from '../../imgs/prewed-three.jpeg';
@@ -58,9 +59,7 @@ function Content() {
             <InfoPemberkatan/>
             <InfoResepsi/>
             <CountdownTimer/>
-            <div>
-                RSVP
-            </div>
+            <RSVPForm/>
             <div>
                 Guestbook
             </div>

@@ -1,0 +1,7 @@
+.rsvp-form {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 32px;
+}
