@@ -14,7 +14,7 @@ function InfoResepsi() {
                     <div className="divider"/>
                     <div className="info-content">
                         <p>Minggu, 2 Januari 2022</p>
-                        <p>11:30 s/d 14:00 WIB</p>
+                        <p>11:30 WIB</p>
                         <h3>HARRIS Vertu Hotel</h3>
                         <p className="address">Hayam Wuruk - Gambir Jakarta Pusat</p>
                     </div>

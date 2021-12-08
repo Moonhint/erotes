@@ -6,7 +6,7 @@ function AntoniInfo() {
     return (
         <div className="antoni-info">
             <div className="left-side">
-                <h4>Antoni</h4>
+                <h4>Antoni Xu</h4>
                 <div className="info-container">
                     <p>
                         <strong>Putra dari</strong>
@@ -14,9 +14,9 @@ function AntoniInfo() {
                     <p>Bpk. Komardi (+)</p>
                     <p>& Ibu Ami</p>
                 </div>
-                <div className="sosmed-container">
+                <a className="sosmed-container" href="https://instagram.com/antoni.xu?utm_medium=copy_link">
                     <IoLogoInstagram color="#FFF" size="20px"/>
-                </div>
+                </a>
             </div>
             <div className="right-side">
                 <img src={imgAntoni} alt="" width="144px" height="144px"  />

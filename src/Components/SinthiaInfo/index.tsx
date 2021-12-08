@@ -9,7 +9,7 @@ function SinthiaInfo() {
                 <img src={imgSinthia} alt="" width="144px" height="144px"  />
             </div>
             <div className="right-side">
-                <h4>Sinthia</h4>
+                <h4>Sinthia Tan</h4>
                 <div className="info-container">
                     <p>
                         <strong>Putri dari</strong>
@@ -17,9 +17,9 @@ function SinthiaInfo() {
                     <p>Bpk. Herry Sudiono</p>
                     <p>& Ibu Maria Francisca Pranoto</p>
                 </div>
-                <div className="sosmed-container">
+                <a className="sosmed-container" href="https://instagram.com/sinthiatan?utm_medium=copy_link">
                     <IoLogoInstagram color="#FFF" size="20px"/>
-                </div>
+                </a>
             </div>
         </div>
     );
