@@ -8,6 +8,9 @@ import InfoPemberkatan from '../../Components/InfoPemberkatan';
 import InfoResepsi from '../../Components/InfoResepsi';
 import CountdownTimer from '../../Components/CountdownTimer';
 import RSVPForm from '../../Components/RSVPForm';
+import ImgGalery from '../../Components/ImgGalery';
+import GuessBook from '../../Components/GuessBook';
+import MainFooter from '../../Components/MainFooter';
 
 import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
 import imgPrewedThree from '../../imgs/prewed-three.jpeg';
@@ -60,12 +63,9 @@ function Content() {
             <InfoResepsi/>
             <CountdownTimer/>
             <RSVPForm/>
-            <div>
-                Guestbook
-            </div>
-            <div>
-                Footer
-            </div>
+            <ImgGalery/>
+            <GuessBook/>
+            <MainFooter/>
         </div>
     );
 }

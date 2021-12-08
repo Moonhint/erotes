@@ -1,0 +1,20 @@
+.main-footer {
+    text-align: center;
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+.main-footer p {
+    margin: 0;
+    color: #666;
+    font-family: 'Cabin';
+}
+
+.main-footer h2 {
+    margin: 0;
+    color: #666;
+    font-size: 18px;
+    font-family: 'Cabin';
+    font-weight: 800;
+    margin-top: 6px;
+}

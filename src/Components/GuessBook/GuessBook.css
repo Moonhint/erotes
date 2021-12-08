@@ -1,0 +1,57 @@
+.guess-book {
+    background-color: #9B949B;
+    color: #FFF;
+}
+
+.book-header {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 72px;
+    padding-bottom: 42px;
+}
+
+.book-header h4 {
+    margin: 0;
+    font-family: 'Sacramento';
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.book-header p {
+    margin: 0;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 8px;
+    font-family: 'Philosopher';
+}
+
+.book-header .divider {
+    margin: 0;
+    border-top: 1px solid #FFF;
+    margin-top: 24px;
+}
+
+.thank-you-note {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.thank-you-note h1 {
+    font-family: 'Monoline';
+    margin-top: 48px;
+    font-size: 24px;
+    margin: 0;
+}
+
+.thank-you-note h4 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.book-footer {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI0OXB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTEyODAgMy40QzEwNTAuNTkgMTggMTAxOS40IDg0Ljg5IDczNC40MiA4NC44OWMtMzIwIDAtMzIwLTg0LjMtNjQwLTg0LjNDNTkuNC41OSAyOC4yIDEuNiAwIDMuNFYxNDBoMTI4MHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAyNC4zMWM0My40Ni01LjY5IDk0LjU2LTkuMjUgMTU4LjQyLTkuMjUgMzIwIDAgMzIwIDg5LjI0IDY0MCA4OS4yNCAyNTYuMTMgMCAzMDcuMjgtNTcuMTYgNDgxLjU4LTgwVjE0MEgweiIgZmlsbC1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0xMjgwIDUxLjc2Yy0yMDEgMTIuNDktMjQyLjQzIDUzLjQtNTEzLjU4IDUzLjQtMzIwIDAtMzIwLTU3LTY0MC01Ny00OC44NS4wMS05MC4yMSAxLjM1LTEyNi40MiAzLjZWMTQwaDEyODB6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100% 49px;
+    height: 49px;
+}
