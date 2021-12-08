@@ -3,7 +3,7 @@ import './InfoPemberkatan.css';
 
 function InfoPemberkatan() {
     const handleOpenLocation = () => {
-        console.log('location');
+        window.open('https://maps.app.goo.gl/XMG5bhsSg58qpwCB6');
     };
       
     return (

@@ -3,7 +3,7 @@ import './InfoResepsi.css';
 
 function InfoResepsi() {
     const handleOpenLocation = () => {
-        console.log('location');
+        window.open('https://maps.app.goo.gl/Z8A4KLzgBWdM3H9D6');
     };
       
     return (
