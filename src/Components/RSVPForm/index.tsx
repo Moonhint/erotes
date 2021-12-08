@@ -13,7 +13,7 @@ function RsvpForm() {
         <div className="rsvp-form">
             <h4>RSVP</h4>
             <p>Kami tidak sabar menunggu hari pernikahan kami bersama Bapak/Ibu/Saudara/i, mohon konfirmasi kehadiran Bapak/Ibu/Saudara/i. <br/> Terima kasih.</p>
-            <div className="name">[Nama]</div>
+            <div className="name">Muhammad Yunita Ng</div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-container">
                     <div className="selectdiv ">

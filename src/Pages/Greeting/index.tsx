@@ -19,7 +19,7 @@ function Greeting() {
     <div className={greetingClass}>
       <div className="greeting-container">
         <div className="text-inner">
-          <p>Dear [Guess Name],</p>
+          <p>Dear Muhammad Yunita Ng,</p>
           <h2>You Are Invited!</h2>
           <p>Wedding Celebration of</p>
           <h1>Antoni & Sinthia</h1>
