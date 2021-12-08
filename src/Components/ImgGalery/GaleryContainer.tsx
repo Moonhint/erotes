@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { imageInGalery } from './images';
-import { CSSTransition } from 'react-transition-group';
 
 function GaleryContainer({ visibleIndex }: { visibleIndex: number } ) {
 
