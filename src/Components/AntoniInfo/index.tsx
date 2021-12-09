@@ -11,7 +11,7 @@ function AntoniInfo() {
                     <p>
                         <strong>Putra dari</strong>
                     </p>
-                    <p>Bpk. Komardi (+)</p>
+                    <p>Bpk. Komardi (†)</p>
                     <p>& Ibu Ami</p>
                 </div>
                 <a className="sosmed-container" href="https://instagram.com/antoni.xu?utm_medium=copy_link">
