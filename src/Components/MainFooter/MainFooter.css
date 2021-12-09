@@ -10,11 +10,13 @@
     font-family: 'Cabin';
 }
 
-.main-footer h2 {
-    margin: 0;
-    color: #666;
-    font-size: 18px;
-    font-family: 'Cabin';
-    font-weight: 800;
-    margin-top: 6px;
+.main-footer .logo-com {
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+}
+.main-footer img {
+    width: 105px;
+    height: 50px;
+    object-fit: cover;
 }
