@@ -4,7 +4,7 @@ import comImg from '../../imgs/com-logo.png';
 function MainFooter() {
     return (
         <div className="main-footer">
-            <p>Made with ♥ by</p>
+            <p>Made with ❤️ by</p>
             <div className="logo-com">
                 <img src={comImg} alt="" />
             </div>

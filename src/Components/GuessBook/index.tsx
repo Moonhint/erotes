@@ -1,3 +1,5 @@
+import { IoIosChatbubbles } from "react-icons/io";
+
 import './GuessBook.css';
 import BookItem from './BookItem';
 
@@ -29,7 +31,7 @@ function GuessBook() {
             <div className="book-header">
                 <h4>Guestbook</h4>
                 <p>Leave your wishes for us…</p>
-
+                <button className="chat-button"><IoIosChatbubbles color="#FFF"/> Write your wish...</button>
                 <div className="divider"/>
             </div>
             <div className="book-item-container">
