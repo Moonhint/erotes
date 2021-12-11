@@ -19,7 +19,7 @@ function RsvpForm() {
                     <div className="selectdiv ">
                         <label>
                             <select {...register("attendence")}>
-                                <option selected value=""> Apakah kamu bisa hadir? </option>
+                                <option selected disabled value=""> Apakah kamu bisa hadir? </option>
                                 <option value="can">Bisa hadir</option>
                                 <option value="cannot">Maaf, tidak bisa</option>
                             </select>
