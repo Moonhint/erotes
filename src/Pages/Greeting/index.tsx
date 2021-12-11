@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IoIosArrowForward } from "react-icons/io";
+import { IoMdHeart } from "react-icons/io";
 
 import './Greeting.css';
 
@@ -25,7 +25,7 @@ function Greeting() {
           <h1>Antoni & Sinthia</h1>
         </div>
         <div className="btn-open" onClick={handleOpenInvitation}>
-          <IoIosArrowForward size="18px"/>
+          <IoMdHeart size="18px"/>
           <span className="text-open">Open Invitation</span>
         </div>
       </div>

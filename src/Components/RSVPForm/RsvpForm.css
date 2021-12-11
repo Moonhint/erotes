@@ -96,3 +96,7 @@ select::-ms-expand {
     border-radius: 0;
     outline:none;
 }
+
+.second-select-div {
+    margin-top: 6px;
+}
