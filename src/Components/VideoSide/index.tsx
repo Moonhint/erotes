@@ -3,11 +3,7 @@ import YouTube from 'react-youtube';
 
 import './VideoSide.css';
 
-function VideoSide({ song }: { song: any}) {
-
-    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    const width80 = (width * 100) / 100;
-
+function VideoSide({ song, width80 }: { song: any, width80: any }) {
     const opts = {
         height: (width80 / 2) + 70,
         width: width80 - 0,

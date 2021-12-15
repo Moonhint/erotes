@@ -100,3 +100,7 @@ select::-ms-expand {
 .second-select-div {
     margin-top: 6px;
 }
+
+.form-container-result {
+    margin-top: 18px !important;
+}

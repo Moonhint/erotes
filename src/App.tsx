@@ -8,8 +8,11 @@ const canon = require("./audios/canon.mp3");
 const queryParams = new URLSearchParams(window.location.search);
 const userId = queryParams.get('d');
 
+const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+const width80 = (width * 100) / 100;
+
 function App() {
-  const [ currUser, setCurrUser ] = useState({ hola: 'hola' });
+  const [ currUser, setCurrUser ] = useState<any>({ hola: 'hola' });
   const song = new Audio(canon.default);
   song.currentTime = 3;
 
@@ -25,8 +28,8 @@ function App() {
 
   return (
     <div className="App">
-      <Content song={song} currUser={currUser}/>
-      <Greeting song={song}/>
+      <Content song={song} currUser={currUser} setCurrUser={setCurrUser} width80={width80}/>
+      <Greeting song={song} currUser={currUser}/>
     </div>
   );
 }

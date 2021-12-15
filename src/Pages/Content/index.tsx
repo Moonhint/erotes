@@ -19,7 +19,7 @@ import imgPrewedThree from '../../imgs/prewed-three.jpeg';
 
 import './Content.css';
 
-function Content({ song, currUser }: { song: any, currUser: any }) {
+function Content({ song, currUser, setCurrUser, width80 }: { song: any, currUser: any, setCurrUser: any, width80: any }) {
     const [contentClassName, setContentClassName] = useState('no-content');
 
     useEffect(()=>{
@@ -44,7 +44,6 @@ function Content({ song, currUser }: { song: any, currUser: any }) {
     ]
     return (
         <div className={contentClassName}>
-            {JSON.stringify(currUser)}
             <HeroBanner/>
             <ShowCaseOne/>
             <ShowCaseTwo 
@@ -65,9 +64,9 @@ function Content({ song, currUser }: { song: any, currUser: any }) {
             <InfoPemberkatan/>
             <InfoResepsi/>
             <CountdownTimer/>
-            <RSVPForm/>
+            <RSVPForm currUser={currUser} setCurrUser={setCurrUser}/>
             <QRInfo/>
-            <VideoSide song={song}/>
+            <VideoSide song={song} width80={width80}/>
             <ImgGalery/>
             <GuessBook/>
             <MainFooter/>
