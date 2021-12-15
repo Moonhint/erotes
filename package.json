@@ -25,7 +25,9 @@
     "start": "PORT=3006 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "pm2 start serve --name erotes -- -l 3000 -s build",
+    "stop": "pm2 stop erotes && pm2 delete erotes"
   },
   "eslintConfig": {
     "extends": [
