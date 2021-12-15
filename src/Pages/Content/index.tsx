@@ -19,7 +19,7 @@ import imgPrewedThree from '../../imgs/prewed-three.jpeg';
 
 import './Content.css';
 
-function Content({ song }: { song: any}) {
+function Content({ song, currUser }: { song: any, currUser: any }) {
     const [contentClassName, setContentClassName] = useState('no-content');
 
     useEffect(()=>{
@@ -44,6 +44,7 @@ function Content({ song }: { song: any}) {
     ]
     return (
         <div className={contentClassName}>
+            {JSON.stringify(currUser)}
             <HeroBanner/>
             <ShowCaseOne/>
             <ShowCaseTwo 

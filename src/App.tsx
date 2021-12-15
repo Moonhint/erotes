@@ -9,7 +9,7 @@ const queryParams = new URLSearchParams(window.location.search);
 const userId = queryParams.get('d');
 
 function App() {
-  const [ currUser, setCurrUser ] = useState();
+  const [ currUser, setCurrUser ] = useState({ hola: 'hola' });
   const song = new Audio(canon.default);
   song.currentTime = 3;
 
@@ -25,8 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      {JSON.stringify(currUser)}
-      <Content song={song}/>
+      <Content song={song} currUser={currUser}/>
       <Greeting song={song}/>
     </div>
   );
