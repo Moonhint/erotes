@@ -1,5 +1,6 @@
 .video-side {
     margin: 0;
+    overflow: hidden;
 }
 
 .youtube-container {
