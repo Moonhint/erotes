@@ -5,11 +5,6 @@ const instance = axios.create({
     timeout: 1000,
 });
 
-instance.get('erotes-users/index')
-  .then(function (response) {
-    console.log(response.data);
-    console.log(response.status);
-    console.log(response.statusText);
-    console.log(response.headers);
-    console.log(response.config);
-  });
+export const getUserById = (_id: string) => {
+  return instance.get(`erotes-users/index`);
+}
