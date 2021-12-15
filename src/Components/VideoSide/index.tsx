@@ -45,9 +45,11 @@ function VideoSide({ song }: { song: any}) {
 
     return (
         <div className="video-side">
+            <div className="upper-wave-video"/>
             <div className="youtube-container">
                 <YouTube videoId="cmkRjqkAX2M" containerClassName='wedding-video' opts={opts} onReady={onReady} onPlay={onPlay} onPause={onPause} onEnd={onEnd} />
             </div>
+            <div className="bottom-wave-video"/>
         </div>
     );
 }
