@@ -3,14 +3,10 @@ import { IoMdHeart } from "react-icons/io";
 
 import './Greeting.css';
 
-const canon = require("../../audios/canon.mp3");
-
-function Greeting() {
+function Greeting({ song }: { song: any}) {
   const [ greetingClass, setGreetingClass ] = useState('greeting');
 
   const handleOpenInvitation = () => {
-    let song = new Audio(canon.default);
-    song.currentTime = 3;
     song.play();
     setGreetingClass('greeting-close');
   }

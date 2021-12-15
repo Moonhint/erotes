@@ -1,0 +1,14 @@
+.video-side {
+    margin: 0;
+}
+
+.youtube-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wedding-video .ytp-title {
+    display: none !important;
+}

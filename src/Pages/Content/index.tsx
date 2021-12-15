@@ -11,13 +11,15 @@ import RSVPForm from '../../Components/RSVPForm';
 import ImgGalery from '../../Components/ImgGalery';
 import GuessBook from '../../Components/GuessBook';
 import MainFooter from '../../Components/MainFooter';
+import VideoSide from '../../Components/VideoSide';
+import QRInfo from '../../Components/QRInfo';
 
 import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
 import imgPrewedThree from '../../imgs/prewed-three.jpeg';
 
 import './Content.css';
 
-function Content() {
+function Content({ song }: { song: any}) {
     const [contentClassName, setContentClassName] = useState('no-content');
 
     useEffect(()=>{
@@ -63,6 +65,8 @@ function Content() {
             <InfoResepsi/>
             <CountdownTimer/>
             <RSVPForm/>
+            <QRInfo/>
+            <VideoSide song={song}/>
             <ImgGalery/>
             <GuessBook/>
             <MainFooter/>
