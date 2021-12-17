@@ -43,17 +43,21 @@
   top: 0;
   right: 0;
   z-index: 2;
-  background-image: linear-gradient(180deg,rgba(0,4,10,0.36) 68%,#000c0f 100%),url('../../imgs/bg.jpeg');
+  background-image: linear-gradient(180deg,rgba(0,4,10,0.36) 68%,#000c0f 100%),url('../../imgs/bg.jpg');
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
   width: 100%;
   height: 100vh;
 
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   animation: 0.5s ease-out 0s 1 slideTopToBottom, 0.5s cubic-bezier(0.280, 0.440, 1.000, -0.225) 0s 1 showFromHide;
+}
+
+.greeting-container {
+  margin-bottom: 90px;
 }
 
 .greeting-close {
@@ -61,7 +65,7 @@
   top: 0;
   right: 0;
   z-index: 2;
-  background-image: linear-gradient(180deg,rgba(0,4,10,0.36) 68%,#000c0f 100%),url('../../imgs/bg.jpeg');
+  background-image: linear-gradient(180deg,rgba(0,4,10,0.36) 68%,#000c0f 100%),url('../../imgs/bg.jpg');
   background-size: cover;
   background-position: bottom center;
   width: 100%;
@@ -127,3 +131,4 @@
 .text-open {
   margin-left: 8px;
 }
+

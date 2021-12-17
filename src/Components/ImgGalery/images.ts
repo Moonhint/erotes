@@ -1,6 +1,6 @@
-import prewedOne from '../../imgs/prewed-one.jpeg';
-import prewedTwo from '../../imgs/prewed-two.jpeg';
-import prewedThree from '../../imgs/prewed-three.jpeg';
+import prewedOne from '../../imgs/prewed-one.jpg';
+import prewedTwo from '../../imgs/prewed-two.jpg';
+import prewedThree from '../../imgs/prewed-three.jpg';
 
 export const imageInGalery = [
     {

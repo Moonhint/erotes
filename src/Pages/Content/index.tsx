@@ -14,8 +14,8 @@ import MainFooter from '../../Components/MainFooter';
 import VideoSide from '../../Components/VideoSide';
 import QRInfo from '../../Components/QRInfo';
 
-import imgPrewedTwo from '../../imgs/prewed-two.jpeg';
-import imgPrewedThree from '../../imgs/prewed-three.jpeg';
+import imgPrewedTwo from '../../imgs/prewed-two.jpg';
+import imgPrewedThree from '../../imgs/prewed-three.jpg';
 
 import './Content.css';
 
@@ -68,7 +68,7 @@ function Content({ song, currUser, setCurrUser, width80 }: { song: any, currUser
             <QRInfo/>
             <VideoSide song={song} width80={width80}/>
             <ImgGalery/>
-            <GuessBook/>
+            <GuessBook currUser={currUser} />
             <MainFooter/>
         </div>
     );

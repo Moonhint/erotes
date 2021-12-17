@@ -1,6 +1,6 @@
 import './ShowCaseOne.css';
 import imgFlower from '../../imgs/flower.png';
-import imgPrewedOne from '../../imgs/prewed-one.jpeg';
+import imgPrewedOne from '../../imgs/prewed-one.jpg';
 
 function ShowCaseOne() {
     return (

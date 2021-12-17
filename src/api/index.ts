@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: 'https://api.toninco.com/api/',
+    baseURL: 'http://localhost:8000/api/',
     timeout: 1000,
 });
 
@@ -15,4 +15,16 @@ export const makeRsvp = (payload:any) => {
 
 export const findPrevRsvpByUserId = (userId: any) => {
   return instance.get(`/erotes-rsvps/show-by-user-id/${userId}`);
+}
+
+export const getAllComments = () => {
+  return instance.get(`/erotes-comments/index`);
+}
+
+export const makeAWish = (payload: any) => {
+  return instance.post(`/erotes-comments/create`, payload);
+}
+
+export const findPrevWishByUserId = (userId: any) => {
+  return instance.get(`/erotes-comments/show-by-user-id/${userId}`);
 }
