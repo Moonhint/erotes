@@ -4,7 +4,7 @@ import Greeting from './Pages/Greeting';
 import Content from './Pages/Content';
 import { getUserById } from './api';
 
-const canon = require("./audios/canon.mp3");
+const backsound = require("./audios/backsound.mp3");
 const queryParams = new URLSearchParams(window.location.search);
 const userId = queryParams.get('d');
 
@@ -13,8 +13,9 @@ const width80 = (width * 100) / 100;
 
 function App() {
   const [ currUser, setCurrUser ] = useState<any>({ hola: 'hola' });
-  const song = new Audio(canon.default);
+  const song = new Audio(backsound.default);
   song.currentTime = 3;
+  song.loop = true;
 
   useEffect(()=>{
     const getUserInfo = async () => {
