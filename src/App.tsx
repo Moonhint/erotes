@@ -20,12 +20,18 @@ function App() {
   const [ isLoading, setIsLoading ] = useState(true);
   const [ greetingClass, setGreetingClass ] = useState('greeting');
   const [ currUser, setCurrUser ] = useState<any>({});
+  const [ errCurrentuser, setErrCurrentUser ] = useState<any>({});
 
   useEffect(()=>{
     const getUserInfo = async () => {
       if(userId){
-        const { data } = await getUserById(userId);
-        setCurrUser(data);
+        try {
+          const { data } = await getUserById(userId);
+          setCurrUser(data);
+        }catch(err){
+          console.log(err);
+          setErrCurrentUser(err);
+        }
       }
     }
     getUserInfo();
@@ -40,7 +46,7 @@ function App() {
       return(
         <>
           <Content showContent={greetingClass !== 'greeting'} song={song} currUser={currUser} setCurrUser={setCurrUser} width80={width80}/>
-          <Greeting song={song} currUser={currUser} greetingClass={greetingClass} setGreetingClass={setGreetingClass} />
+          <Greeting song={song} currUser={currUser} greetingClass={greetingClass} setGreetingClass={setGreetingClass} err={errCurrentuser} />
         </>
       )
     }

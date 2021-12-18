@@ -2,7 +2,7 @@ import { IoMdHeart } from "react-icons/io";
 
 import './Greeting.css';
 
-function Greeting({ song, currUser, greetingClass, setGreetingClass }: { song: any, currUser: any, greetingClass:any, setGreetingClass:any }) {
+function Greeting({ song, currUser, greetingClass, setGreetingClass, err }: { song: any, currUser: any, greetingClass:any, setGreetingClass:any, err:any }) {
 
   const handleOpenInvitation = () => {
     song.play();
@@ -17,6 +17,9 @@ function Greeting({ song, currUser, greetingClass, setGreetingClass }: { song: a
           <h2>You Are Invited!</h2>
           <p>Wedding Celebration of</p>
           <h1>Antoni & Sinthia</h1>
+          <pre>
+            {JSON.stringify(err)}
+          </pre>
         </div>
         <div className="btn-open" onClick={handleOpenInvitation}>
           <IoMdHeart size="18px"/>
