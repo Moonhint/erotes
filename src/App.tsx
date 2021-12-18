@@ -29,7 +29,6 @@ function App() {
           const { data } = await getUserById(userId);
           setCurrUser(data);
         }catch(err){
-          console.log(err);
           setErrCurrentUser(err);
         }
       }
@@ -46,7 +45,7 @@ function App() {
       return(
         <>
           <Content showContent={greetingClass !== 'greeting'} song={song} currUser={currUser} setCurrUser={setCurrUser} width80={width80}/>
-          <Greeting song={song} currUser={currUser} greetingClass={greetingClass} setGreetingClass={setGreetingClass} err={errCurrentuser} />
+          <Greeting song={song} currUser={currUser} greetingClass={greetingClass} setGreetingClass={setGreetingClass} />
         </>
       )
     }
