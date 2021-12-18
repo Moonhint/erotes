@@ -14,7 +14,7 @@ const width80 = (width * 100) / 100;
 
 const song = new Audio(backsound.default);
 song.currentTime = 3;
-// song.loop = true;
+song.loop = true;
 
 function App() {
   const [ isLoading, setIsLoading ] = useState(true);
