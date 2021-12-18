@@ -76,7 +76,7 @@ function Loading({ setIsLoading }: LoadingParamsType) {
 
   return (
     <div className="loading-page">
-      <img src={spinnerImg}/>
+      <img src={spinnerImg} alt=""/>
     </div>
   );
 }
