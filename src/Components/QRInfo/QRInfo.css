@@ -46,3 +46,17 @@
     margin: 6px 8px;
     font-family: 'Cabin';
 }
+
+.btn-container img {
+    width: 42px;
+}
+
+.btn-gopay {
+    width: 52px;
+    margin: 6px 8px !important;
+    padding: 10px !important;
+}
+.btn-gopay img {
+    width: 72px;
+    padding-top: 3px;
+}

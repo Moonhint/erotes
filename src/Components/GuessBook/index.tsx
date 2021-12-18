@@ -6,26 +6,7 @@ import { makeAWish, getAllComments } from '../../api';
 import './GuessBook.css';
 import BookItem from './BookItem';
 
-// const guessBookItems = [
-//     {
-//         id: 1,
-//         name: 'Raditya ❤️',
-//         comment: '😘❤️ Selamat menikah, selamat menjalani kehidupan pernikahan. ❤️😘 \n Semoga Tuhan selalu menjaga kalian dan anak-anak kelak. ❤️❤️'
-//     },
-//     {
-//         id: 2,
-//         name: 'Pramudya 🥰',
-//         comment: '❤️❤️ Hari perayaan pernikahanmu hanya akan berlangsung sesaat, tapi semoga cintamu dan cintanya akan tetap tumbuh. ❤️❤️ \n Semoga jadi pasangan yang sempurna, Selamat menempuh hidup baru sahabatku.🥰😘'
-//     },
-//     {
-//         id: 3,
-//         name: 'Ningrum',
-//         comment: 'Tetanggaku yang sudah jadi teman bermain dari kecil, selamat menikah! Semoga bahagia dan dilancarkan rezekinya selalu. ❤️❤️❤️ Jangan lupakan teman kecilmu ini, ya! ❤️❤️❤️'
-//     },
-// ]
-
-
-const randomEmot = ['😘', '❤️', '🥰'];
+const randomEmot = ['😘', '❤️', '🥰', '🥳'];
 
 function GuessBook({ currUser }: {currUser: any}) {
 
@@ -69,7 +50,7 @@ function GuessBook({ currUser }: {currUser: any}) {
         if (currUser.alreadyComment){
             return null;
         }
-        
+
         if (showInputForm){
             return (
                 <div className="guessbook-inputer">
