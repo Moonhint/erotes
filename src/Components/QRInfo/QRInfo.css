@@ -63,3 +63,26 @@
     width: 72px;
     padding-top: 3px;
 }
+
+.qr-description p {
+    color: #000;
+    font-weight: 600;
+}
+
+.qr-description button {
+    width: 94%;
+    border-width: 0px!important;
+    font-size: 17px;
+    color: #000 !important;
+    padding: 10px 18px;
+    border-radius: 3px;
+    font-family: 'Cabin';
+}
+
+.board-hidden {
+    font-size: 0;
+}
+
+.copied {
+    color: #000 !important;
+}

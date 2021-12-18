@@ -19,7 +19,7 @@ import imgPrewedThree from '../../imgs/prewed-three.jpg';
 
 import './Content.css';
 
-function Content({ song, currUser, setCurrUser, width80 }: { song: any, currUser: any, setCurrUser: any, width80: any }) {
+function Content({ showContent, song, currUser, setCurrUser, width80 }: { showContent:boolean, song: any, currUser: any, setCurrUser: any, width80: any }) {
     const [contentClassName, setContentClassName] = useState('no-content');
 
     useEffect(()=>{
@@ -42,34 +42,47 @@ function Content({ song, currUser, setCurrUser, width80 }: { song: any, currUser
             rightRadius: true,
         }
     ]
+
+    const renderBelowContent = () => {
+        if (showContent){
+            return (
+                <>
+                    <ShowCaseOne/>
+                    <ShowCaseTwo 
+                        title={showCasePrewed[0].title} 
+                        desc={showCasePrewed[0].desc} 
+                        img={showCasePrewed[0].img}
+                        rightRadius={showCasePrewed[0].rightRadius} 
+                    />
+                    <ShowCaseTwo 
+                        title={showCasePrewed[1].title} 
+                        desc={showCasePrewed[1].desc} 
+                        img={showCasePrewed[1].img}
+                        rightRadius={showCasePrewed[1].rightRadius} 
+                    />
+                    <div className="divider-content"/>
+                    <AntoniInfo/>
+                    <SinthiaInfo/>
+                    <InfoPemberkatan/>
+                    <InfoResepsi/>
+                    <CountdownTimer/>
+                    <RSVPForm currUser={currUser} setCurrUser={setCurrUser}/>
+                    <QRInfo/>
+                    <VideoSide song={song} width80={width80}/>
+                    <ImgGalery/>
+                    <GuessBook currUser={currUser} />
+                    <MainFooter/>
+                </>
+            )
+        }else{
+            return null;
+        }
+    }
+    
     return (
         <div className={contentClassName}>
             <HeroBanner/>
-            <ShowCaseOne/>
-            <ShowCaseTwo 
-                title={showCasePrewed[0].title} 
-                desc={showCasePrewed[0].desc} 
-                img={showCasePrewed[0].img}
-                rightRadius={showCasePrewed[0].rightRadius} 
-            />
-            <ShowCaseTwo 
-                title={showCasePrewed[1].title} 
-                desc={showCasePrewed[1].desc} 
-                img={showCasePrewed[1].img}
-                rightRadius={showCasePrewed[1].rightRadius} 
-            />
-            <div className="divider-content"/>
-            <AntoniInfo/>
-            <SinthiaInfo/>
-            <InfoPemberkatan/>
-            <InfoResepsi/>
-            <CountdownTimer/>
-            <RSVPForm currUser={currUser} setCurrUser={setCurrUser}/>
-            <QRInfo/>
-            <VideoSide song={song} width80={width80}/>
-            <ImgGalery/>
-            <GuessBook currUser={currUser} />
-            <MainFooter/>
+            {renderBelowContent()}
         </div>
     );
 }

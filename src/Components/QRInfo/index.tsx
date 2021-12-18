@@ -11,7 +11,40 @@ import qrgopay from '../../imgs/qrs/gopay.jpg';
 function QRInfo() {
 
     const [ selectedBtn, setSelectedButton ] = useState('');
+    const [ copyiedValue, setCopiedValue ] = useState(false);
+    const handleBcaClicked = () => {
+        setSelectedButton('bca');
+        setCopiedValue(false);
+    }
 
+    const handleOvoClicked = () => {
+        setSelectedButton('ovo');
+        setCopiedValue(false);
+    }
+
+    const handleGopayClicked = () => {
+        setSelectedButton('gopay');
+        setCopiedValue(false);
+    }
+
+    const copyToClipboard = (value: string) => {
+        let boardId = 'phone-number-gopay';
+
+        if (value === 'gopay'){
+            boardId = 'phone-number-gopay';
+        }else if (value === 'ovo') {
+            boardId = 'phone-number-ovo';
+        }else if (value === 'bca') {
+            boardId = 'rek-bca';
+        }
+
+        let copyText:any = document.getElementById(boardId);
+
+        if (copyText){
+            navigator.clipboard.writeText(copyText.innerText);
+            setCopiedValue(true);
+        }
+    }
     
     const renderQrCodes = () => {
 
@@ -19,35 +52,41 @@ function QRInfo() {
             return (
                 <div className="qr-container">
                     <img src={qrgopay} alt="" width="100px" height="100px"/>
+                    <div className="qr-description">
+                        <p>Gopay - Antoni - 0817-7664-6792</p>
+                        <span className="board-hidden" id="phone-number-gopay">081776646792</span>
+                        <button onClick={() => copyToClipboard('gopay')}>Copy Number</button>
+                    </div>
+                    { copyiedValue ? <p className="copied">Copied!</p> : null}
                 </div>                
             );
         }else if (selectedBtn === 'ovo'){
             return (
                 <div className="qr-container">
                     <img src={qrovo} alt="" width="100px" height="100px"/>
+                    <div className="qr-description">
+                        <p>Ovo - Antoni - 0817-7664-6792</p>
+                        <span className="board-hidden" id="phone-number-ovo">081776646792</span>
+                        <button onClick={() => copyToClipboard('ovo')}>Copy Number</button>
+                    </div>
+                    { copyiedValue ? <p className="copied">Copied!</p> : null}
                 </div>
             );
         }else if (selectedBtn === 'bca'){
             return (
                 <div className="qr-container">
                     <img src={qrbca} alt="" width="100px" height="100px"/>
+                    <div className="qr-description">
+                        <p>BCA - Antoni - 22-800-501-24</p>
+                        <span className="board-hidden" id="rek-bca">2280050124</span>
+                        <button onClick={() => copyToClipboard('bca')}>Copy Number</button>
+                    </div>
+                    { copyiedValue ? <p className="copied">Copied!</p> : null}
                 </div>
             )
         }else {
             return null;
         }
-    }
-
-    const handleBcaClicked = () => {
-        setSelectedButton('bca');
-    }
-
-    const handleOvoClicked = () => {
-        setSelectedButton('ovo');
-    }
-
-    const handleGopayClicked = () => {
-        setSelectedButton('gopay');
     }
 
     return (

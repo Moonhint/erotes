@@ -1,10 +1,8 @@
-import { useState } from 'react';
 import { IoMdHeart } from "react-icons/io";
 
 import './Greeting.css';
 
-function Greeting({ song, currUser }: { song: any, currUser: any }) {
-  const [ greetingClass, setGreetingClass ] = useState('greeting');
+function Greeting({ song, currUser, greetingClass, setGreetingClass }: { song: any, currUser: any, greetingClass:any, setGreetingClass:any }) {
 
   const handleOpenInvitation = () => {
     song.play();
