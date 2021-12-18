@@ -12,7 +12,7 @@
 .qr-info h2 {
     font-family: 'Cinzel';
     font-size: 32px;
-    color: #FFF;
+    color: #ede6d6;
     margin: 8px 0;
 }
 
@@ -23,8 +23,11 @@
 }
 
 .qr-container {
-    width: 100px;
-    height: 100px;
+    padding: 24px;
+    background-color: #FFF;
+    border-radius: 8px;
+    margin: 8px;
+    margin-top: 24px;
 }
 
 .qr-container img {
