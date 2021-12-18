@@ -1,18 +1,28 @@
-import prewedOne from '../../imgs/prewed-one.jpg';
-import prewedTwo from '../../imgs/prewed-two.jpg';
-import prewedThree from '../../imgs/prewed-three.jpg';
+import galeryOne from '../../imgs/galeryOne.jpg';
+import galeryTwo from '../../imgs/galeryTwo.jpg';
+import galeryThree from '../../imgs/galeryThree.jpg';
+import galeryFour from '../../imgs/galeryFour.jpg';
+import galeryFive from '../../imgs/galeryFive.jpg';
 
 export const imageInGalery = [
     {
         id: 1,
-        src: prewedOne,
+        src: galeryOne,
     },
     {
         id: 2,
-        src: prewedTwo,
+        src: galeryTwo,
     },
     {
         id: 3,
-        src: prewedThree,
+        src: galeryThree,
+    },
+    {
+        id: 4,
+        src: galeryFour,
+    },
+    {
+        id: 5,
+        src: galeryFive,
     }
 ];
