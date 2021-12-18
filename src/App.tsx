@@ -12,13 +12,14 @@ const userId = queryParams.get('d');
 const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 const width80 = (width * 100) / 100;
 
+const song = new Audio(backsound.default);
+song.currentTime = 3;
+// song.loop = true;
+
 function App() {
   const [ isLoading, setIsLoading ] = useState(true);
   const [ greetingClass, setGreetingClass ] = useState('greeting');
   const [ currUser, setCurrUser ] = useState<any>({});
-  const song = new Audio(backsound.default);
-  song.currentTime = 3;
-  song.loop = true;
 
   useEffect(()=>{
     const getUserInfo = async () => {
