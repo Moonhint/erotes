@@ -88,3 +88,13 @@
     height: 54px;
     z-index: 1;
 }
+
+
+@media (min-width: 1000px) {
+    .info-resepsi {
+        padding-top: 64px;
+    }
+    .info-resepsi .container {
+        width: 35%;
+    }
+}

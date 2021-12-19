@@ -44,3 +44,21 @@
 .right-side img {
     object-fit: contain;
 }
+
+@media (min-width: 1000px) {
+    .antoni-info {
+        width: 50%;
+    }
+    .right-side img {
+        object-fit: contain;
+        width: 244px;
+        height: 244px;
+    }
+    .left-side h4 {
+        font-size: 32px;
+    }
+    .left-side p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

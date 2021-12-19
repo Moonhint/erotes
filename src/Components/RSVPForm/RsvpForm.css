@@ -104,3 +104,15 @@ select::-ms-expand {
 .form-container-result {
     margin-top: 18px !important;
 }
+
+@media (min-width: 1000px) {
+    .rsvp-form {
+        margin-top: 24px;
+    }
+    .rsvp-form p { 
+        width: 420px;
+    }
+    .rsvp-form form {
+        width: 420px;
+    }
+}

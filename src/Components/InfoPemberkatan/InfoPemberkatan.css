@@ -90,3 +90,13 @@
     background-position: 50%;
     background-repeat: no-repeat;
 }
+
+
+@media (min-width: 1000px) {
+    .info-pemberkatan {
+        margin-top: 64px;
+    }
+    .info-pemberkatan .container {
+        width: 35%;
+    }
+}

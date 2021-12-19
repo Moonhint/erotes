@@ -46,32 +46,47 @@
 
 .image-one {
     animation: opacitychange 3s ease-in-out;
+    background-position: center;
 }
   
 .image-two {
     animation: opacitychange 3s ease-in-out;
+    background-position: center;
 }
 
 .image-three {
     animation: opacitychange 3s ease-in-out;
+    background-position: center;
 }
 
 .image-four {
     animation: opacitychange 3s ease-in-out;
+    background-position: center;
 }
 
 .image-five {
     animation: opacitychange 3s ease-in-out;
+    background-position: center;
 }
 
 .image-six {
     animation: opacitychange 3s ease-in-out;
+    background-position: center;
 }
 
 .image-seven {
     animation: opacitychange 3s ease-in-out;
+    background-position: center;
 }
 
 .image-eight {
     animation: opacitychange 3s ease-in-out;
+    background-position: center;
+}
+
+
+@media (min-width: 1000px) {
+    .galery-container {
+        height: 95vh;
+    }
 }

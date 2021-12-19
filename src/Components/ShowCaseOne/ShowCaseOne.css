@@ -44,3 +44,28 @@
     border-radius: 0 0 8px 8px;
     object-fit: cover;
 }
+
+
+@media (min-width: 1000px) {
+
+    .show-case-one {
+        padding-top: 92px;
+        padding-bottom: 72px;
+    }
+
+    .content-container {
+        width: 70%;
+    }
+
+    .showcase-img-container {
+        width: 45%;
+    }
+
+    .content-container p {
+        margin: 14px 20%;
+    }
+
+    .showcase-img-container {
+        height: 540px;
+    }
+}

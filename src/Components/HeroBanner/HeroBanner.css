@@ -41,3 +41,20 @@
     bottom: 0;
     right: 0;
 }
+
+
+@media (min-width: 1000px) {
+    .hero-banner {
+        width: 100%;
+        height: 90vh;
+        background-image: url('../../imgs/hero-desktop.jpg');
+        background-position: center;
+    }
+    .banner-content {
+        background: #9b949b;
+        padding: 20px;
+        border-radius: 6px;
+        margin-right: 52px;
+        opacity: 0.95;
+    }
+}

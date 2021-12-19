@@ -66,3 +66,35 @@
     box-shadow: 0px -9px 18px -6px rgb(0 0 0 / 14%);
     object-fit: cover;
 }
+
+
+@media (min-width: 1000px) {
+
+    .show-case-two {
+        padding-top: 0;
+    }
+
+    .content-two-container {
+        width: 70%;
+    }
+
+    .showcase-two-img-container {
+        width: 45%;
+    }
+
+    .content-two-container .divider {
+        width: 20px;
+    }
+    
+    .showcase-two-img-container img {
+        top: -13%;
+    }
+
+    .showcase-two-img-container {
+        height: 420px;
+    }
+
+    .content-two-container .description {
+        margin: 0 20%;
+    }
+}

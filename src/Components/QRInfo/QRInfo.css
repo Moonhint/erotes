@@ -86,3 +86,13 @@
 .copied {
     color: #000 !important;
 }
+
+@media (min-width: 1000px) {
+    .qr-info {
+        width: 56%;
+    }
+    .qr-container {
+        margin: 20px 22%;
+        margin-top: 38px;
+    }
+}

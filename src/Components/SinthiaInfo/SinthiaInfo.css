@@ -46,3 +46,20 @@
 .left-side img {
     object-fit: contain;
 }
+
+@media (min-width: 1000px) {
+    .sinthia-info {
+        width: 50%;
+    }
+    .left-side img {
+        width: 244px;
+        height: 244px;
+    }
+    .right-side h4 {
+        font-size: 32px;
+    }
+    .right-side p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

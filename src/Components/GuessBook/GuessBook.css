@@ -126,3 +126,16 @@
 .no-wished {
     text-align: center;
 }
+
+
+@media (min-width: 1000px) {
+    .book-header {
+        width: 55%;
+    }
+    .book-header .divider {
+        margin-top: 42px;
+    }
+    .book-item {
+        width: 55%;
+    }
+}
