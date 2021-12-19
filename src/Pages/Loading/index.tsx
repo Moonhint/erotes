@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { useEffect } from 'react';
-import spinnerImg from '../../imgs/spinner.gif';
+import loadingImg from '../../imgs/loading.gif';
 import antoniImg from '../../imgs/antoni.jpg';
 import backenvImg from '../../imgs/backenv.jpg';
 import bgImg from '../../imgs/bg.jpg';
@@ -24,14 +24,12 @@ import galeryEight from '../../imgs/galeryEight.jpg';
 
 import './Loading.css';
 
-
-
 const preloadImages = (imagesAssets, onComplete) => {
 
   const assetLength = imagesAssets.length;
   let assetLoaded = 0;
 
-  const onImageLoaded = (event) => {
+  const onImageLoaded = (_event) => {
     assetLoaded = assetLoaded + 1;
     if (assetLoaded === assetLength){
       onComplete();
@@ -82,19 +80,19 @@ function Loading({ setIsLoading }: LoadingParamsType) {
       'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1NHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTEyODAgMy40QzEwNTAuNTkgMTggMTAxOS40IDg0Ljg5IDczNC40MiA4NC44OWMtMzIwIDAtMzIwLTg0LjMtNjQwLTg0LjNDNTkuNC41OSAyOC4yIDEuNiAwIDMuNFYxNDBoMTI4MHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAyNC4zMWM0My40Ni01LjY5IDk0LjU2LTkuMjUgMTU4LjQyLTkuMjUgMzIwIDAgMzIwIDg5LjI0IDY0MCA4OS4yNCAyNTYuMTMgMCAzMDcuMjgtNTcuMTYgNDgxLjU4LTgwVjE0MEgweiIgZmlsbC1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0xMjgwIDUxLjc2Yy0yMDEgMTIuNDktMjQyLjQzIDUzLjQtNTEzLjU4IDUzLjQtMzIwIDAtMzIwLTU3LTY0MC01Ny00OC44NS4wMS05MC4yMSAxLjM1LTEyNi40MiAzLjZWMTQwaDEyODB6Ii8+PC9nPjwvc3ZnPg==',
     ]
     preloadImages(preloadedImagesAssets, ()=>{
-      setIsLoading(false);
+      // setIsLoading(false);
     });
 
-    setTimeout(()=>{
-      setIsLoading(false);
-    }, 5000);
+    // setTimeout(()=>{
+    //   setIsLoading(false);
+    // }, 5000);
 
   // eslint-disable-next-line
   }, []);
 
   return (
     <div className="loading-page">
-      <img src={spinnerImg} alt=""/>
+      <img src={loadingImg} alt=""/>
     </div>
   );
 }

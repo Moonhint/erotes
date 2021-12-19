@@ -20,7 +20,6 @@ function App() {
   const [ isLoading, setIsLoading ] = useState(true);
   const [ greetingClass, setGreetingClass ] = useState('greeting');
   const [ currUser, setCurrUser ] = useState<any>({});
-  const [ errCurrentuser, setErrCurrentUser ] = useState<any>({});
 
   useEffect(()=>{
     const getUserInfo = async () => {
@@ -29,7 +28,7 @@ function App() {
           const { data } = await getUserById(userId);
           setCurrUser(data);
         }catch(err){
-          setErrCurrentUser(err);
+          console.log(err);
         }
       }
     }
