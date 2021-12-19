@@ -50,9 +50,9 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
                 <div className="selectdiv second-select-div">
                     <label>
                         <select defaultValue="" {...register("attendenceWith")}>
-                            <option disabled value=""> Dengan pasangan? </option>
-                            <option value="alone">Tidak, saya sendiri</option>
-                            <option value="partner">Ya, dengan pasangan</option>
+                            <option disabled value=""> With a partner? </option>
+                            <option value="alone">No, just me</option>
+                            <option value="partner">Yes, with a partner</option>
                         </select>
                     </label>
                 </div>
@@ -70,14 +70,14 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
                         <div className="selectdiv">
                             <label>
                                 <select defaultValue="" {...register("attendence")}>
-                                    <option disabled value=""> Apakah kamu bisa hadir? </option>
-                                    <option value="can">Bisa hadir</option>
-                                    <option value="cannot">Maaf, tidak bisa</option>
+                                    <option disabled value=""> Can you attend? </option>
+                                    <option value="can">Can attend</option>
+                                    <option value="cannot">Sorry can not</option>
                                 </select>
                             </label>
                         </div>
                         { renderAttendenceWithSelect() }
-                        <button type="submit">Kirim</button>
+                        <button type="submit">Send</button>
                     </div>
                 </form>
             )
@@ -85,11 +85,11 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
             if (prevRsvpData){
                 if (prevRsvpData.attendence === 'can'){
                     return (
-                        <p className="form-container-result">Terimakasih sudah mengisi bisa hadir di RSVP, sampai jumpa di acara resepsi kami.</p>
+                        <p className="form-container-result">Thank you for filling in to be present at the RSVP, see you at our reception.</p>
                     )
                 }else{
                     return (
-                        <p className="form-container-result">Terimakasih sudah mengisi tidak bisa hadir di RSVP.</p>
+                        <p className="form-container-result">Thank you for filling in unable to attend the RSVP.</p>
                     )
                 }
             }
@@ -98,7 +98,7 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
 
     const renderDescription = () => {
         if (!currUser.alreadyRsvp) {
-            return (<p>Kami tidak sabar menunggu hari pernikahan kami bersama Bapak/Ibu/Saudara/i, mohon konfirmasi kehadiran Bapak/Ibu/Saudara/i. <br/> Terima kasih.</p>)
+            return (<p>We can't wait for our wedding day with you, please confirm your presence. <br/> Thank You.</p>)
         }else{
             return null;
         }

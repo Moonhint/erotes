@@ -12,10 +12,10 @@ function SinthiaInfo() {
                 <h4>Sinthia Tan</h4>
                 <div className="info-container">
                     <p>
-                        <strong>Putri dari</strong>
+                        <strong>Daughter of</strong>
                     </p>
-                    <p>Bpk. Herry Sudiono</p>
-                    <p>& Ibu Maria Francisca Pranoto</p>
+                    <p>Mr. Herry Sudiono</p>
+                    <p>& Mrs. Maria Francisca Pranoto</p>
                 </div>
                 <a className="sosmed-container" href="https://instagram.com/sinthiatan?utm_medium=copy_link">
                     <IoLogoInstagram color="#FFF" size="20px"/>

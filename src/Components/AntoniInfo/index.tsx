@@ -9,10 +9,10 @@ function AntoniInfo() {
                 <h4>Antoni Xu</h4>
                 <div className="info-container">
                     <p>
-                        <strong>Putra dari</strong>
+                        <strong>Son of</strong>
                     </p>
-                    <p>Bpk. Komardi (†)</p>
-                    <p>& Ibu Ami</p>
+                    <p>Mr. Komardi (†)</p>
+                    <p>& Mrs. Ami</p>
                 </div>
                 <a className="sosmed-container" href="https://instagram.com/antoni.xu?utm_medium=copy_link">
                     <IoLogoInstagram color="#FFF" size="20px"/>

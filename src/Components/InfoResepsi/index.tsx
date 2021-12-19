@@ -10,10 +10,10 @@ function InfoResepsi() {
         <div className="info-resepsi">
             <div className="container">
                 <div className="top-container">
-                    <h2>Resepsi</h2>
+                    <h2>Reception</h2>
                     <div className="divider"/>
                     <div className="info-content">
-                        <p>Minggu, 2 Januari 2022</p>
+                        <p>Sunday, January 2, 2022</p>
                         <p>11:30 WIB</p>
                         <h3>HARRIS Vertu Hotel</h3>
                         <p className="address">Hayam Wuruk - Gambir Jakarta Pusat</p>

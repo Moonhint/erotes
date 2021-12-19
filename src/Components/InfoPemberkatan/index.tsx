@@ -11,10 +11,10 @@ function InfoPemberkatan() {
             <div className="wave-top"/>
             <div className="container">
                 <div className="top-container">
-                    <h2>Pemberkatan Nikah</h2>
+                    <h2>Wedding Ceremony</h2>
                     <div className="divider"/>
                     <div className="info-content">
-                        <p>Jumat, 31 Desember 2021</p>
+                        <p>Friday, December 31, 2021</p>
                         <p>09:00 WIB</p>
                         <h3>Vihara Avalokitesvara</h3>
                         <p className="address">Pondok Cabe - Tangerang Selatan Banten</p>

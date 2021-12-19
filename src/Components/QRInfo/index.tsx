@@ -6,7 +6,6 @@ import bca from '../../imgs/payment/bca.png';
 import qrbca from '../../imgs/qrs/bca.jpg';
 import qrovo from '../../imgs/qrs/ovo.jpg';
 import qrgopay from '../../imgs/qrs/gopay.jpg';
-// import { IoLogoInstagram } from "react-icons/io";
 
 function QRInfo() {
 

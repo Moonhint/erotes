@@ -56,7 +56,7 @@ function GuessBook({ currUser }: {currUser: any}) {
                 <div className="guessbook-inputer">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <textarea rows={4} cols={35} {...register("wish")}/>
-                        <button>Kirim</button>
+                        <button>Send</button>
                     </form>
                 </div>
             );
@@ -83,7 +83,7 @@ function GuessBook({ currUser }: {currUser: any}) {
 
     const renderDescription = () => {
         if (currUser.alreadyComment){
-            return (<p>Terima kasih untuk doanya…</p>)
+            return (<p>Thank you for the prayers…</p>)
         }else{
             return (<p>Leave your wishes for us…</p>);
         }
