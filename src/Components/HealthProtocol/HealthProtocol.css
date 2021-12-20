@@ -1,0 +1,59 @@
+.health-protocol {
+    background-color: #FFF;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.health-protocol h4 {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.health-protocol p {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: #000;
+    margin-top: 16px;
+    line-height: 22px;
+    margin-bottom: 42px;
+}
+
+.health-protocol img {
+    width: 80px;
+    height: 80px;
+}
+
+.health-protocol-container {
+    margin-top: 36px;
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+@media (min-width: 1000px) {
+    .health-protocol {
+        width:90%;
+    }
+    .health-protocol-container {
+        margin: 20px 22%;
+        margin-top: 38px;
+    }
+    .health-protocol-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .health-protocol img {
+        width: 100px;
+        height: 100px;
+    }
+}

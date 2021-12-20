@@ -12,6 +12,7 @@
     position: absolute;
     width: 100%;
     background-repeat: no-repeat;
+    transform: scaleY(4) translateY(13px) rotate(180deg);
 }
 .galery-container {
     width: 100%;
@@ -45,48 +46,48 @@
 
 
 .image-one {
-    animation: opacitychange 3s ease-in-out;
+    animation: opacitychange 6s ease-in-out;
     background-position: center;
 }
   
 .image-two {
-    animation: opacitychange 3s ease-in-out;
+    animation: opacitychange 6s ease-in-out;
     background-position: center;
 }
 
 .image-three {
-    animation: opacitychange 3s ease-in-out;
+    animation: opacitychange 6s ease-in-out;
     background-position: center;
 }
 
 .image-four {
-    animation: opacitychange 3s ease-in-out;
+    animation: opacitychange 6s ease-in-out;
     background-position: center;
 }
 
 .image-five {
-    animation: opacitychange 3s ease-in-out;
+    animation: opacitychange 6s ease-in-out;
     background-position: center;
 }
 
 .image-six {
-    animation: opacitychange 3s ease-in-out;
+    animation: opacitychange 6s ease-in-out;
     background-position: center;
 }
 
 .image-seven {
-    animation: opacitychange 3s ease-in-out;
+    animation: opacitychange 6s ease-in-out;
     background-position: center;
 }
 
 .image-eight {
-    animation: opacitychange 3s ease-in-out;
+    animation: opacitychange 6s ease-in-out;
     background-position: center;
 }
 
 
 @media (min-width: 1000px) {
     .galery-container {
-        height: 95vh;
+        height: 120vh;
     }
 }

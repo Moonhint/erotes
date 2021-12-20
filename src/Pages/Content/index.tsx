@@ -13,6 +13,7 @@ import GuessBook from '../../Components/GuessBook';
 import MainFooter from '../../Components/MainFooter';
 import VideoSide from '../../Components/VideoSide';
 import QRInfo from '../../Components/QRInfo';
+import HealthProtocol from '../../Components/HealthProtocol';
 
 import imgPrewedTwo from '../../imgs/prewed-two.jpg';
 import imgPrewedThree from '../../imgs/prewed-three.jpg';
@@ -67,10 +68,11 @@ function Content({ showContent, song, currUser, setCurrUser, width80 }: { showCo
                     <InfoResepsi/>
                     <CountdownTimer/>
                     <RSVPForm currUser={currUser} setCurrUser={setCurrUser}/>
+                    <HealthProtocol/>
                     <QRInfo/>
                     <VideoSide song={song} width80={width80}/>
                     <ImgGalery/>
-                    <GuessBook currUser={currUser} />
+                    <GuessBook currUser={currUser} setCurrUser={setCurrUser}/>
                     <MainFooter/>
                 </>
             )

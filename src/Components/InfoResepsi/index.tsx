@@ -16,7 +16,7 @@ function InfoResepsi() {
                         <p>Sunday, January 2, 2022</p>
                         <p>11:30 WIB</p>
                         <h3>HARRIS Vertu Hotel</h3>
-                        <p className="address">Hayam Wuruk - Gambir Jakarta Pusat</p>
+                        <p className="address">Ballroom Lt.5 - Hayam Wuruk - Gambir Jakarta Pusat</p>
                     </div>
                     <div className="btn-location" onClick={handleOpenLocation}>
                         <IoMdPin size="18px"/>

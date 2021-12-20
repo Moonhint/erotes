@@ -106,11 +106,12 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
 
     return (
         <div className="rsvp-form">
+            <div className="wave-top-rsvp"/>
             <h4>RSVP</h4>
             { renderDescription() }
             <div className="name">{currUser.name}</div>
             { renderDemandOfRSVP() }
-
+            <div className="bottom-image-rsvp"/>
         </div>
     );
 }

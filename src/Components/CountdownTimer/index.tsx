@@ -1,5 +1,41 @@
+// @ts-nocheck
+
+import { IoIosCalendar } from "react-icons/io";
+import moment from "moment";
 import { useEffect, useState } from 'react';
+import AddToCalendarHOC from "react-add-to-calendar-hoc";
 import './CountdownTimer.css';
+
+const wedding = "01/02/2022";
+
+const startDatetime = new Date("2022-01-02T11:30");
+const endDatetime = new Date("2022-01-02T14:00");
+const duration = startDatetime.getHours() - endDatetime.getHours();
+const event = {
+  title: "Wedding of Antoni & Sinthia",
+  description: "You can find the venue location <a href=https://g.page/hvertuharmoni?share>here</a>",
+  location: "Ballroom Lt.5 - HARRIS Vertu Hotel Harmoni Jakarta",
+  duration,
+  endDatetime: moment(endDatetime).format("YYYYMMDDTHHmmssZ"),
+  startDatetime: moment(startDatetime).format("YYYYMMDDTHHmmssZ")
+};
+
+const ATCDropdown = (args) => (
+    <ul className="atc-dropdown">
+        {args.children.map((link, i) => (
+            <li key={i}>{link}</li>
+        ))}
+    </ul>
+);
+
+const ATCWrapper = (args) => (
+    <a onClick={args.onClick} className="atc-item" href="/">
+        <IoIosCalendar size="18px"/>
+        <span className="text-open">{args.children}</span>
+    </a>
+);
+
+const AddToCalendarDropdown = AddToCalendarHOC(ATCWrapper, ATCDropdown);
 
 function CountdownTimer() {
 
@@ -13,8 +49,6 @@ function CountdownTimer() {
         const minute = second * 60;
         const hour = minute * 60;
         const day = hour * 24;
-
-        let wedding = "01/02/2022";
 
         const countDown = new Date(wedding).getTime();
         const x = setInterval(() => {    
@@ -67,6 +101,10 @@ function CountdownTimer() {
                     <p className="desc">Sec</p>
                 </div>
             </div>
+            <AddToCalendarDropdown
+                linkProps={{className: "atc-dropdown-title"}}
+                event={event}
+            />
         </div>
     );
 }

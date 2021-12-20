@@ -8,7 +8,7 @@ import BookItem from './BookItem';
 
 const randomEmot = ['😘', '❤️', '🥰', '🥳'];
 
-function GuessBook({ currUser }: {currUser: any}) {
+function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any}) {
 
     const [ books, setBooks ] = useState<any>([]);
     
@@ -38,6 +38,7 @@ function GuessBook({ currUser }: {currUser: any}) {
         }catch(err){
             console.log(err);
         }
+        setCurrUser({...currUser, alreadyComment: true});
         setShowInputForm(false);
     }
 
