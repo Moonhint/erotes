@@ -10,7 +10,7 @@
 }
 
 .qr-info h2 {
-    font-family: 'Cinzel';
+    font-family: 'Sacramento';
     font-size: 32px;
     color: #ede6d6;
     margin: 8px 0;
@@ -94,5 +94,11 @@
     .qr-container {
         margin: 20px 22%;
         margin-top: 38px;
+    }
+    .qr-info p {
+        width: 80%;
+        text-align: center;
+        margin: 24px auto;
+
     }
 }

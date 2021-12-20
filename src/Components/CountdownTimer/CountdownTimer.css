@@ -63,7 +63,7 @@
     background-color: #eee;
     color: black;
     box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 22%);
-    width: 135px;
+    width: 123px;
     margin: 0 auto;
     padding: 8px;
     display: flex;
@@ -77,7 +77,7 @@
 
 .atc-dropdown {
     background-color: #FFF;
-    width: 150px;
+    width: 138px;
     padding: 0;
     position: absolute;
     top: 185px;
@@ -91,7 +91,7 @@
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     list-style-type: none;
-    width: 132px;
+    width: 116px;
     margin: 0;
     padding: 12px;
     font-family: 'Cabin';

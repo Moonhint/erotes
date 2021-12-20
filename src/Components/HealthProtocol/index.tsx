@@ -10,7 +10,7 @@ function HealthProtocol() {
     return (
         <div className="health-protocol">
             <h2>Health Protocol</h2>
-            <p>It’s important to us that everyone stays safe, please read carefully our Wedding Day Covid-19 Guidance before attending the event:</p>
+            <p className="desc">It’s important to us that everyone stays safe, please read carefully our Wedding Day Covid-19 Guidance before attending the event:</p>
             <div className="health-protocol-container">
                 <div className="item-container">
                     <h4>Social Distancing</h4>
