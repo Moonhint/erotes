@@ -13,6 +13,13 @@ import imgPrewedOne from '../../imgs/prewed-one.jpg';
 import imgPrewedTwo from '../../imgs/prewed-two.jpg';
 import imgPrewedThree from '../../imgs/prewed-three.jpg';
 import sinthiaImg from '../../imgs/sinthia.jpg';
+import bcaPayment from '../../imgs/payment/bca.png';
+import ovoPayment from '../../imgs/payment/ovo.png';
+import gopayPayment from '../../imgs/payment/gopay.png';
+import protocolOne from '../../imgs/protocol-1.png';
+import protocolTwo from '../../imgs/protocol-2.png';
+import protocolThree from '../../imgs/protocol-3.png';
+import protocolFour from '../../imgs/protocol-4.png';
 import galeryOne from '../../imgs/galeryOne.jpg';
 import galeryTwo from '../../imgs/galeryTwo.jpg';
 import galeryThree from '../../imgs/galeryThree.jpg';
@@ -65,6 +72,13 @@ function Loading({ setIsLoading }: LoadingParamsType) {
       imgPrewedTwo,
       imgPrewedThree,
       sinthiaImg,
+      bcaPayment,
+      ovoPayment,
+      gopayPayment,
+      protocolOne,
+      protocolTwo,
+      protocolThree,
+      protocolFour,
       galeryOne,
       galeryTwo,
       galeryThree,
@@ -85,7 +99,7 @@ function Loading({ setIsLoading }: LoadingParamsType) {
 
     setTimeout(()=>{
       setIsLoading(false);
-    }, 5000);
+    }, 7000);
 
   // eslint-disable-next-line
   }, []);

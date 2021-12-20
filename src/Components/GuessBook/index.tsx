@@ -6,7 +6,7 @@ import { makeAWish, getAllComments } from '../../api';
 import './GuessBook.css';
 import BookItem from './BookItem';
 
-const randomEmot = ['😘', '❤️', '🥰', '🥳'];
+const randomEmot = ['😘', '❤️', '🥰', '🥳', '🤗', '😉', '😊', '😄'];
 
 function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any}) {
 
@@ -16,7 +16,7 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
     const renderBookItem = () => {
         if (books.length > 0){
             return books.map(({ id, ErotesUser, wish }: any) => (
-                <BookItem key={id} name={`${ErotesUser.name} ${randomEmot[Math.floor(Math.random() * 4)]}`} comment={wish} />
+                <BookItem key={id} name={`${ErotesUser.name} ${randomEmot[Math.floor(Math.random() * 8)]}`} comment={wish} />
             ))
         }else{
             return <div className="no-wished">-</div>
