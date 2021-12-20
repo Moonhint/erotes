@@ -8,6 +8,7 @@ import comLogoImg from '../../imgs/com-logo.png';
 import countdownImg from '../../imgs/countdown.jpeg';
 import flowerImg from '../../imgs/flower.png';
 import heroImg from '../../imgs/hero.jpg';
+import heroDesktopImg from '../../imgs/hero-desktop.jpg';
 import intimateImg from '../../imgs/intimate.jpg';
 import imgPrewedOne from '../../imgs/prewed-one.jpg';
 import imgPrewedTwo from '../../imgs/prewed-two.jpg';
@@ -67,6 +68,7 @@ function Loading({ setIsLoading }: LoadingParamsType) {
       countdownImg,
       flowerImg,
       heroImg,
+      heroDesktopImg,
       intimateImg,
       imgPrewedOne,
       imgPrewedTwo,
