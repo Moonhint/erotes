@@ -95,10 +95,14 @@
         margin: 20px 22%;
         margin-top: 38px;
     }
+    .qr-info h2 {
+        font-size: 42px;
+    }
     .qr-info p {
         width: 80%;
         text-align: center;
         margin: 24px auto;
-
+        font-size: 16px;
+        line-height: 32px;
     }
 }
