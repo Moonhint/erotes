@@ -4,9 +4,12 @@ import YouTube from 'react-youtube';
 import './VideoSide.css';
 
 function VideoSide({ song, width80 }: { song: any, width80: any }) {
+
+    const adjustedWidth = (width80 > 1000) ? (width80/1.5) : width80;
+
     const opts = {
-        height: (width80 / 2) + 70,
-        width: width80 - 0,
+        height: (adjustedWidth / 2) + 70,
+        width: adjustedWidth - 0,
         playerVars: {
             autoplay: 1,
             rel: 0,
