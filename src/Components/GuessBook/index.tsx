@@ -31,7 +31,7 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
             alert('please wait, your wish is almost arrive to us');
             return true;
         }
-        
+
         const userWish = { wish: data.wish, erotesUserId: currUser.id };
 
         if (!userWish.erotesUserId) {
