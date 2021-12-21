@@ -15,7 +15,7 @@ function ImgGalery() {
             }else {
                 setVisibleIndex(visibleIndex + 1);
             }
-        }, 6000);
+        }, 5000);
 
         return () => {
             clearInterval(galeryInterval);

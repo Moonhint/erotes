@@ -36,7 +36,10 @@
     0% { 
         opacity: 0; 
     }
-    50% {
+    10% {
+        opacity: 1;
+    }
+    90% {
         opacity: 1;
     }
     100% { 
@@ -46,42 +49,42 @@
 
 
 .image-one {
-    animation: opacitychange 6s ease-in-out;
+    animation: opacitychange 5s ease-in-out;
     background-position: center;
 }
   
 .image-two {
-    animation: opacitychange 6s ease-in-out;
+    animation: opacitychange 5s ease-in-out;
     background-position: center;
 }
 
 .image-three {
-    animation: opacitychange 6s ease-in-out;
+    animation: opacitychange 5s ease-in-out;
     background-position: center;
 }
 
 .image-four {
-    animation: opacitychange 6s ease-in-out;
+    animation: opacitychange 5s ease-in-out;
     background-position: center;
 }
 
 .image-five {
-    animation: opacitychange 6s ease-in-out;
+    animation: opacitychange 5s ease-in-out;
     background-position: center;
 }
 
 .image-six {
-    animation: opacitychange 6s ease-in-out;
+    animation: opacitychange 5s ease-in-out;
     background-position: center;
 }
 
 .image-seven {
-    animation: opacitychange 6s ease-in-out;
+    animation: opacitychange 5s ease-in-out;
     background-position: center;
 }
 
 .image-eight {
-    animation: opacitychange 6s ease-in-out;
+    animation: opacitychange 5s ease-in-out;
     background-position: center;
 }
 
