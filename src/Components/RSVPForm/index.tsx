@@ -27,6 +27,7 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
 
         if (sendingRsvp){
             alert('please wait, your rsvp is almost arrive to us');
+            return true;
         }
 
         const adjustedData = { ...data, erotesUserId: currUser.id };      
