@@ -26,8 +26,22 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
     const { register, handleSubmit } = useForm();
 
     const onSubmit = async (data:any) => {
+        const userWish = { wish: data.wish, erotesUserId: currUser.id };
+
+        if (!userWish.erotesUserId) {
+            console.error('attempt to send wish without id');
+            alert('Please make sure the url is correct, we have not yet recognize your id');
+            return true;
+        }
+
+        if (!userWish.wish) {
+            console.error('attempt to send empty wish');
+            alert('please fill the wish before sending it.');
+            return true;
+        }
+
         try{
-            const result = await makeAWish({ wish: data.wish, erotesUserId: currUser.id });
+            const result = await makeAWish(userWish);
             const newComment = {
                 ...result.data,
                 ErotesUser: {
@@ -35,18 +49,18 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
                 }
             }
             setBooks([ newComment, ...books]);
+            setCurrUser({...currUser, alreadyComment: true});
+            setShowInputForm(false);
         }catch(err){
             console.error(err);
         }
-        setCurrUser({...currUser, alreadyComment: true});
-        setShowInputForm(false);
     }
 
     const handleToggleInputter = () => {
         try {
             setShowInputForm(true);
         }catch(err){
-            console.log(err);
+            console.error(err);
         }
     }
 
