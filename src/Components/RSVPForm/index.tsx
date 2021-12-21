@@ -38,8 +38,8 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
             if (!adjustedData.attendenceWith){
                 console.error('attempt to rsvp partially');
                 alert('please fill all the required form');
+                return true;
             }
-            return true;
         }
 
         try {
