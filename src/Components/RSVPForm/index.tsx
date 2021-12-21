@@ -28,9 +28,22 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
             adjustedData.attendenceWith = "";
         }  
 
+        if (!adjustedData.erotesUserId) {
+            console.error('attempt to send rsvp without id');
+            alert('Please make sure the url is correct, we have do not recognize your id');
+            return true;
+        }
+
+        if (adjustedData.attendence === 'can'){
+            if (!adjustedData.attendenceWith){
+                console.error('attempt to rsvp partially');
+                alert('please fill all the required form');
+            }
+        }
+
         try {
             await makeRsvp(adjustedData);
-            // setPrevRsvpData(data);
+            setPrevRsvpData(data);
             setCurrUser({ ...currUser, alreadyRsvp: true });
         }catch(err){
             console.error(err);
