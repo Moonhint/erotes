@@ -7,6 +7,7 @@ import { makeRsvp, findPrevRsvpByUserId } from "../../api";
 function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
     const [ showSelectAttendenceWith, setShowSelectAttendenceWith ] = useState(false);
     const [ prevRsvpData, setPrevRsvpData ] = useState<any>();
+    const [ sendingRsvp, setSendingRsvp ] = useState(false);
     const { register, handleSubmit } = useForm();
 
     useEffect(()=>{
@@ -23,6 +24,11 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
     }, [currUser.alreadyRsvp]);
 
     const onSubmit = async (data:any) => {
+
+        if (sendingRsvp){
+            alert('please wait, your rsvp is almost arrive to us');
+        }
+
         const adjustedData = { ...data, erotesUserId: currUser.id };      
         if (adjustedData.attendence === 'cannot'){
             adjustedData.attendenceWith = "";
@@ -43,11 +49,14 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
         }
 
         try {
+            setSendingRsvp(true);
             await makeRsvp(adjustedData);
             setPrevRsvpData(data);
             setCurrUser({ ...currUser, alreadyRsvp: true });
         }catch(err){
             console.error(err);
+        }finally{
+            setSendingRsvp(false);
         }
     }
 
