@@ -15,10 +15,9 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
                 const { data } = await findPrevRsvpByUserId(currUser.id);
                 setPrevRsvpData(data);
             }catch(err){
-                console.log(err);
+                console.error(err);
             }
         }
-
         if (currUser.alreadyRsvp) findPrevRsvp();
     // eslint-disable-next-line
     }, [currUser.alreadyRsvp]);
@@ -34,14 +33,18 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
             // setPrevRsvpData(data);
             setCurrUser({ ...currUser, alreadyRsvp: true });
         }catch(err){
-            console.log(err);
+            console.error(err);
         }
     }
 
     const handleAttendenceChange = (e:any) => {
-        const changedValue = e.target.value;
-        const canNotShow = changedValue === 'cannot';
-        setShowSelectAttendenceWith(!canNotShow);
+        try {
+            const changedValue = e.target.value;
+            const canNotShow = changedValue === 'cannot';
+            setShowSelectAttendenceWith(!canNotShow);
+        }catch(err){
+            console.log(err);
+        }
     };
 
     const renderAttendenceWithSelect = () => {

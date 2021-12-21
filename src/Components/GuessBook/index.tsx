@@ -36,14 +36,18 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
             }
             setBooks([ newComment, ...books]);
         }catch(err){
-            console.log(err);
+            console.error(err);
         }
         setCurrUser({...currUser, alreadyComment: true});
         setShowInputForm(false);
     }
 
     const handleToggleInputter = () => {
-        setShowInputForm(true);
+        try {
+            setShowInputForm(true);
+        }catch(err){
+            console.log(err);
+        }
     }
 
     const renderInputter = () => {
@@ -74,7 +78,7 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
                 const { data } = await getAllComments();
                 setBooks(data.data);
             }catch(err){
-                console.log(err);
+                console.error(err);
             }
         }
 
