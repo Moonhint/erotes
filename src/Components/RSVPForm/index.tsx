@@ -30,7 +30,7 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
 
         if (!adjustedData.erotesUserId) {
             console.error('attempt to send rsvp without id');
-            alert('Please make sure the url is correct, we have do not recognize your id');
+            alert('Please make sure the url is correct, we have not yet recognize your id');
             return true;
         }
 
@@ -39,6 +39,7 @@ function RsvpForm({ currUser, setCurrUser }: {currUser:any, setCurrUser: any}) {
                 console.error('attempt to rsvp partially');
                 alert('please fill all the required form');
             }
+            return true;
         }
 
         try {
