@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const instance = axios.create({
     baseURL: 'https://api.toninco.com/api/',
-    timeout: 1000,
+    timeout: 20000,
 });
 
 export const getUserById = (id: string) => {

@@ -11,6 +11,7 @@ const randomEmot = ['😘', '❤️', '🥰', '🥳', '🤗', '😉', '😊', '�
 function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any}) {
 
     const [ books, setBooks ] = useState<any>([]);
+    const [ sendingData, setSendingData ] = useState(false);
     
     const [ showInputForm, setShowInputForm ] = useState(false);
     const renderBookItem = () => {
@@ -26,6 +27,9 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
     const { register, handleSubmit } = useForm();
 
     const onSubmit = async (data:any) => {
+        if (sendingData){
+            alert('please wait, your wish is almost arrive to us');
+        }
         const userWish = { wish: data.wish, erotesUserId: currUser.id };
 
         if (!userWish.erotesUserId) {
@@ -41,6 +45,7 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
         }
 
         try{
+            setSendingData(true);
             const result = await makeAWish(userWish);
             const newComment = {
                 ...result.data,
@@ -53,6 +58,8 @@ function GuessBook({ currUser, setCurrUser }: {currUser: any, setCurrUser: any})
             setShowInputForm(false);
         }catch(err){
             console.error(err);
+        }finally{
+            setSendingData(false);
         }
     }
 
